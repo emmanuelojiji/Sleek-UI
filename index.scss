@@ -21,8 +21,38 @@ header {
     display: flex;
     align-items: center;
   }
-  svg {
+
+  .logo-container{
     margin-right: 20px;
+    @media only screen and (max-width: 800px) {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .desktop-nav {
+    @media only screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  .mobile-menu {
+    display: none;
+    @media only screen and (max-width: 800px) {
+      display: block;
+      flex: 1;
+    }
+  }
+
+}
+
+.header-align-block {
+  display: none;
+  @media only screen and (max-width: 800px) {
+    height: 100%;
+    display: block;
+    flex: 1;
   }
 }
 
@@ -157,9 +187,8 @@ header {
   align-items: flex-end;
 
   @media only screen and (max-width: 800px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
-  
 
   color: white;
 

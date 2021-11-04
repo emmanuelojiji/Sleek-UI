@@ -28,8 +28,55 @@ header .header-wrap {
           align-items: center;
 }
 
-header svg {
+header .logo-container {
   margin-right: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  header .logo-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header .desktop-nav {
+    display: none;
+  }
+}
+
+header .mobile-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  header .mobile-menu {
+    display: block;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.header-align-block {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .header-align-block {
+    height: 100%;
+    display: block;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 
 .billboard {
@@ -198,9 +245,9 @@ header svg {
 @media only screen and (max-width: 800px) {
   .register {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
