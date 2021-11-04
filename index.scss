@@ -1,4 +1,16 @@
-@import url(base.scss);
+@font-face {
+  font-family: 'Audi Extended Normal';
+  src: url('./fonts/AudiType-ExtendedNormal_4.03.woff2') format('woff2'),
+       url('./fonts/AudiType-ExtendedNormal_4.03.woff') format('woff'),
+       url('.//fonts/AudiType-ExtendedNormal_4.03.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Audi Wide Normal';
+  src: url('./fonts/AudiType-WideNormal_4.03.woff2') format('woff2'),
+       url('./fonts/AudiType-WideNormal_4.03.woff') format('woff'),
+       url('./fonts/AudiType-WideNormal_4.03.ttf') format('truetype');
+}
 
 .page-width {
   max-width: 1200px;
@@ -11,7 +23,7 @@ header {
   background: #ffffff;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: $hey !important;
+
 
   .header-wrap {
     height: 100%;
@@ -59,6 +71,11 @@ header {
   background: url("./assets/billboard.webp");
   background-position: center;
   background-size: cover;
+
+  h1{
+    font-family: 'Audi Extended Normal';
+    font-weight: normal;
+  }
 }
 
 .latest-updates {
@@ -109,6 +126,11 @@ header {
 
     @media only screen and (max-width: 800px) {
       margin-left: 0;
+    }
+
+    h2{
+      font-family: 'Audi Extended Normal';
+      font-weight: normal;
     }
   }
 
