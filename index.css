@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page-width {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  height: 80px;
+  background: #ffffff;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+header .header-wrap {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header svg {
+  margin-right: 20px;
+}
+
+.billboard {
+  height: 700px;
+  background: url("./assets/billboard.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.latest-updates {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.latest-updates .latest-updates-grid-container {
+  padding-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(370px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.latest-updates .latest-updates-grid-container div img {
+  width: 100%;
+}
+
+.advert-container {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@media only screen and (max-width: 800px) {
+  .advert-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.advert-container .advert-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .advert-container .advert-wrap {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+
+.advert-container .advert-container-text {
+  margin-left: 50px;
+  display: block;
+}
+
+@media only screen and (max-width: 800px) {
+  .advert-container .advert-container-text {
+    margin-left: 0;
+  }
+}
+
+.advert-container .img-zoom-container {
+  width: 100%;
+  max-width: 50%;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 800px) {
+  .advert-container .img-zoom-container {
+    height: 600px;
+    max-width: none;
+  }
+}
+
+.advert-container .img-zoom-container img {
+  width: 100%;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.advert-container .img-zoom-container img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 800px) {
+  .advert-container .img-zoom-container img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.advert-container:nth-child(4) .advert-wrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.advert-container:nth-child(4) .advert-container-text {
+  margin-left: 0;
+  margin-right: 50px;
+}
+
+.text-banner {
+  padding-top: 250px;
+  padding-bottom: 250px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@media only screen and (max-width: 800px) {
+  .text-banner {
+    padding-top: 125px;
+    padding-bottom: 125px;
+  }
+}
+
+.text-banner .text-banner-wrap {
+  text-align: center;
+}
+
+.updates {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: black;
+  color: white;
+}
+
+.updates p {
+  width: 60%;
+}
+
+@media only screen and (max-width: 800px) {
+  .updates p {
+    width: 100%;
+  }
+}
+
+.register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  background: black;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .register {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.register .register-left {
+  width: 50%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@media only screen and (max-width: 800px) {
+  .register .register-left {
+    width: 100%;
+  }
+}
+
+.register .register-right {
+  height: 100%;
+  width: 50%;
+  background-image: url("./assets/my-audi.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .register .register-right {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
