@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .page-width {
   max-width: 1200px;
   width: 100%;
@@ -22,7 +16,7 @@ header {
     align-items: center;
   }
 
-  .logo-container{
+  .logo-container {
     margin-right: 20px;
     @media only screen and (max-width: 800px) {
       flex: 1;
@@ -44,7 +38,6 @@ header {
       flex: 1;
     }
   }
-
 }
 
 .header-align-block {
@@ -58,6 +51,8 @@ header {
 
 .billboard {
   height: 700px;
+  padding-left: 5%;
+  padding-right: 5%;
   background: url("./assets/billboard.webp");
   background-position: center;
   background-size: cover;
@@ -66,6 +61,8 @@ header {
 .latest-updates {
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 100px;
+  padding-bottom: 100px;
   .latest-updates-grid-container {
     padding-top: 50px;
     display: grid;
@@ -183,7 +180,6 @@ header {
 .register {
   display: flex;
   height: 100vh;
-  background: black;
   align-items: flex-end;
 
   @media only screen and (max-width: 800px) {
@@ -193,11 +189,18 @@ header {
   color: white;
 
   .register-left {
+    height: 100%;
     width: 50%;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: black;
     @media only screen and (max-width: 800px) {
       width: 100%;
+
     }
   }
 
