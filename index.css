@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Audi Extended Normal';
+  font-family: "Audi Extended Normal";
   src: url("./fonts/AudiType-ExtendedNormal_4.03.woff2") format("woff2"), url("./fonts/AudiType-ExtendedNormal_4.03.woff") format("woff"), url(".//fonts/AudiType-ExtendedNormal_4.03.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Audi Wide Normal';
+  font-family: "Audi Wide Normal";
   src: url("./fonts/AudiType-WideNormal_4.03.woff2") format("woff2"), url("./fonts/AudiType-WideNormal_4.03.woff") format("woff"), url("./fonts/AudiType-WideNormal_4.03.ttf") format("truetype");
 }
 
@@ -84,6 +84,7 @@ header .mobile-menu {
 
 .billboard {
   height: 700px;
+  padding-top: 30px;
   padding-left: 5%;
   padding-right: 5%;
   background: url("./assets/billboard.webp");
@@ -92,8 +93,13 @@ header .mobile-menu {
 }
 
 .billboard h1 {
-  font-family: 'Audi Extended Normal';
+  font-family: "Audi Extended Normal";
   font-weight: normal;
+}
+
+.billboard p {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .latest-updates {
@@ -162,8 +168,13 @@ header .mobile-menu {
 }
 
 .advert-container .advert-container-text h2 {
-  font-family: 'Audi Extended Normal';
+  font-family: "Audi Extended Normal";
   font-weight: normal;
+}
+
+.advert-container .advert-container-text p {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .advert-container .img-zoom-container {

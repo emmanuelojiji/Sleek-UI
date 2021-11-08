@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'Audi Extended Normal';
-  src: url('./fonts/AudiType-ExtendedNormal_4.03.woff2') format('woff2'),
-       url('./fonts/AudiType-ExtendedNormal_4.03.woff') format('woff'),
-       url('.//fonts/AudiType-ExtendedNormal_4.03.ttf') format('truetype');
+  font-family: "Audi Extended Normal";
+  src: url("./fonts/AudiType-ExtendedNormal_4.03.woff2") format("woff2"),
+    url("./fonts/AudiType-ExtendedNormal_4.03.woff") format("woff"),
+    url(".//fonts/AudiType-ExtendedNormal_4.03.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Audi Wide Normal';
-  src: url('./fonts/AudiType-WideNormal_4.03.woff2') format('woff2'),
-       url('./fonts/AudiType-WideNormal_4.03.woff') format('woff'),
-       url('./fonts/AudiType-WideNormal_4.03.ttf') format('truetype');
+  font-family: "Audi Wide Normal";
+  src: url("./fonts/AudiType-WideNormal_4.03.woff2") format("woff2"),
+    url("./fonts/AudiType-WideNormal_4.03.woff") format("woff"),
+    url("./fonts/AudiType-WideNormal_4.03.ttf") format("truetype");
 }
 
 .page-width {
@@ -23,7 +23,6 @@ header {
   background: #ffffff;
   padding-left: 5%;
   padding-right: 5%;
-
 
   .header-wrap {
     height: 100%;
@@ -66,15 +65,21 @@ header {
 
 .billboard {
   height: 700px;
+  padding-top: 30px;
   padding-left: 5%;
   padding-right: 5%;
   background: url("./assets/billboard.webp");
   background-position: center;
   background-size: cover;
 
-  h1{
-    font-family: 'Audi Extended Normal';
+  h1 {
+    font-family: "Audi Extended Normal";
     font-weight: normal;
+  }
+
+  p {
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 }
 
@@ -128,9 +133,14 @@ header {
       margin-left: 0;
     }
 
-    h2{
-      font-family: 'Audi Extended Normal';
+    h2 {
+      font-family: "Audi Extended Normal";
       font-weight: normal;
+    }
+
+    p{
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
   }
 
@@ -226,7 +236,6 @@ header {
     background: black;
     @media only screen and (max-width: 800px) {
       width: 100%;
-
     }
   }
 

@@ -6,7 +6,6 @@
 }
 
 h1 {
-  margin-bottom: 30px;
   font-size: 3.5em;
 }
 
@@ -17,7 +16,6 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 30px;
   font-size: 3em;
 }
 
@@ -35,5 +33,25 @@ h3 {
 h4 {
   margin-bottom: 10px;
   font-size: 1.5em;
+}
+
+a {
+  display: inline-block;
+}
+
+.button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.button.filled {
+  background-color: black;
+  color: white;
+}
+
+.button.transparent {
+  border: solid 1px black;
 }
 /*# sourceMappingURL=base.css.map */
