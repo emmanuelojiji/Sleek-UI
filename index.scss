@@ -12,6 +12,14 @@
     url("./fonts/AudiType-WideNormal_4.03.ttf") format("truetype");
 }
 
+h1,h2,h3,h4,h5,h6{
+  font-family: "Audi Extended Normal";
+}
+
+a,p{
+  font-family: "Audi Extended Normal";
+}
+
 .page-width {
   max-width: 1200px;
   width: 100%;
@@ -75,11 +83,23 @@ header {
   h1 {
     font-family: "Audi Extended Normal";
     font-weight: normal;
+    margin-bottom: 30px;
   }
 
   p {
     margin-top: 25px;
     margin-bottom: 25px;
+  } 
+
+  a{
+    @media only screen and (max-width: 850px) {
+      width: 100%;
+
+      &:nth-child(2){
+        margin-bottom: 5px;
+      }
+    }
+  
   }
 }
 
@@ -142,6 +162,13 @@ header {
       margin-top: 30px;
       margin-bottom: 30px;
     }
+
+    a{
+      @media only screen and (max-width: 800px) {
+        width: 100%;
+      }
+    
+    }
   }
 
   .img-zoom-container {
@@ -177,6 +204,11 @@ header {
     .advert-container-text {
       margin-left: 0;
       margin-right: 50px;
+
+      @media only screen and (max-width: 800px) {
+        margin-right: 0;
+      }
+  
     }
   }
 }
